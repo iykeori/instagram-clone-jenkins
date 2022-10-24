@@ -109,7 +109,7 @@
 	</distributionManagement> -->
 	
 	<build>
-		<finalName>web-app</finalName>
+		<finalName>instagram-clone-jenkins</finalName>
 		
 		<plugins>
 			<plugin>
