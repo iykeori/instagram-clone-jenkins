@@ -108,9 +108,7 @@
 	    
 	</distributionManagement> -->
 	
-	<dependencies org="org.apache.maven.plugins" name="maven-compiler-plugin" rev="3.8.5">
-	  <artifact name="maven-compiler-plugin" type="maven-plugin" />
-	</dependencies>
+	
 	
 	<build>
 		<finalName>instagram-clone-jenkins</finalName>
