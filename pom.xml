@@ -136,7 +136,7 @@
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
+				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.5</version>
 				<configuration>
 					<downloadSources>true</downloadSources>
