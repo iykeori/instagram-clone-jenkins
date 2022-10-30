@@ -86,6 +86,12 @@
 			<version>${spring.version}</version>
 		</dependency>
 		
+		<dependency>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-compiler-plugin</artifactId>
+		  <version>3.8.5</version>
+		</dependency>
+		
 		<!-- provided dependencies -->
 
 <<<<<<< HEAD
@@ -120,6 +126,8 @@
 	    
 	</distributionManagement> -->
 	
+	
+	
 	<build>
 		<finalName>instagram-clone-jenkins</finalName>
 		
@@ -132,7 +140,7 @@
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
 				</configuration>
-			</plugin>
+			</plugin> 
 
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
