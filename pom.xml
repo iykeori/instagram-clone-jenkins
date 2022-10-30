@@ -17,7 +17,11 @@
 	</organization>
 
 	<properties>
+<<<<<<< HEAD
 		<jdk.version>1.8</jdk.version>
+=======
+		<jdk.version>11.0.16</jdk.version>
+>>>>>>> 04270ab749d179228f07cc327142ca45e2d2ef08
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
@@ -84,12 +88,20 @@
 		
 		<!-- provided dependencies -->
 
+<<<<<<< HEAD
 		<dependency>
+=======
+<!-- 		<dependency>
+>>>>>>> 04270ab749d179228f07cc327142ca45e2d2ef08
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
 			<scope>provided</scope>
+<<<<<<< HEAD
 		</dependency>
+=======
+		</dependency> -->
+>>>>>>> 04270ab749d179228f07cc327142ca45e2d2ef08
 		
 	</dependencies>
 	
@@ -109,13 +121,13 @@
 	</distributionManagement> -->
 	
 	<build>
-		<finalName>web-app</finalName>
+		<finalName>instagram-clone-jenkins</finalName>
 		
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.6</version>
+				<version>3.8.5</version>
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
@@ -137,7 +149,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
-				<version>3.8.6</version>
+				<version>3.8.5</version>
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
