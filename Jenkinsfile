@@ -3,7 +3,8 @@ pipeline{
     stages{
         stage("run frontend"){
             steps {
-                echo 'executing yarn...'
+                echo 'executing commands...'
+                sh 'sudo su'
                 sh 'yum update -y && \
                     yum install -y httpd && \
                     yum search wget && \
@@ -20,7 +21,7 @@ pipeline{
         }
         stage("run backend"){
             steps {
-                echo 'executing gradle...'
+                echo 'finished...'
             }
         }
     }
