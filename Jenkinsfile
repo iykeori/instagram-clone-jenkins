@@ -4,7 +4,7 @@ pipeline{
         stage("run frontend"){
             steps {
                 echo 'executing commands...'
-                sh 'sudo su'
+                sh 'echo <password> | sudo -S <cmd> '
                 sh 'yum update -y && \
                     yum install -y httpd && \
                     yum search wget && \
