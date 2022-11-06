@@ -4,6 +4,8 @@ pipeline{
         stage("run frontend"){
             steps {
                 echo 'executing commands...'
+                def dockerHome = tool name: 'docker', type: 'dockerTool'
+                def dockerCMD = "${dockerHome}/bin/docker"
                 sh 'set -eu'
                 sh 'docker build  -f $IMAGE_TAG/Dockerfile -t $IMAGE_TAG .'
                 sh 'docker login --username $DOCKER_HUB_USERNAME --password $DOCKER_HUB_PASSWORD'
