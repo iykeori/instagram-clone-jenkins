@@ -2,11 +2,7 @@ node{
    stage('SCM Checkout'){
        git credentialsId: 'be0306bf-b315-41f2-aad8-e09600f13e51', url: 'https://github.com/iykeori/instagram-clone-jenkins.git'
    }
-   stage('Mvn Package'){
-     def mvnHome = tool name: 'maven3.8.5', type: 'maven'
-     def mvnCMD = "${mvnHome}/bin/mvn"
-     sh "${mvnCMD} clean package"
-   }
+   
    stage('Build Docker Image'){
      sh 'docker build -t iykeori/instagram-clone .'
    }
