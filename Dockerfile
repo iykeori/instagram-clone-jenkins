@@ -17,10 +17,10 @@ RUN wget https://github.com/iykeori/instagram-clone/archive/master.zip
 RUN unzip master.zip
 
 # copy files into html directory
-RUN cp -r instagram-clone/* /var/www/html/
+RUN cp -r instagram-clone-master/* /var/www/html/
 
 # remove unwanted folder
-RUN rm -rf instagram-clone master.zip
+RUN rm -rf instagram-clone-master master.zip
 
 # exposes port 80 on the container
 EXPOSE 8080
