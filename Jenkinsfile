@@ -8,7 +8,8 @@ node{
    }
    stage('Push Docker Image'){
      withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
-        sh "docker login -u iykeori -p ${dockerHubPwd}"
+        sh ('docker login -u iykeori -p ${dockerHubPwd}')
+       
     }
      sh 'docker push iykeori/instagram-clone'
    }
