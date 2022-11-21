@@ -23,7 +23,7 @@ RUN cp -r instagram-clone-master/* /var/www/html/
 RUN rm -rf instagram-clone-master master.zip
 
 # exposes port 80 on the container
-EXPOSE 8080
+EXPOSE 8081
 
 # set the default application that will start when the container start
 ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
