@@ -11,7 +11,7 @@ node{
         sh ('docker login -u iykeori -p ${dockerHubPwd}')
        
     }
-    sh 'docker ps -aq | xargs docker stop | xargs docker rm'
+    
     sh 'docker push iykeori/instagram-clone'
    }
   
